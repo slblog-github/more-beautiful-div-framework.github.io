@@ -1,38 +1,25 @@
-<!-- 此页面为错误页 -->
-<!-- More -->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/More-Beautiful-Div-Framework/More-Beautiful-Div-Framework-CDN/yl-if.css">
-<script src="https://at.alicdn.com/t/font_1900305_g9slv4e12hk.js"></script>
-<style type="text/css">
-    .icon {
-       width: 1em; height: 1em;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-    }
-</style>    
-<STYLE>
-@font-face {
-    font-family: 'iconfont';  /* project id 1900305 */
-    src: url('https://at.alicdn.com/t/font_1900305_g9slv4e12hk.eot');
-    src: url('https://at.alicdn.com/t/font_1900305_g9slv4e12hk.eot?#iefix') format('embedded-opentype'),
-    url('https://at.alicdn.com/t/font_1900305_g9slv4e12hk.woff2') format('woff2'),
-    url('https://at.alicdn.com/t/font_1900305_g9slv4e12hk.woff') format('woff'),
-    url('https://at.alicdn.com/t/font_1900305_g9slv4e12hk.ttf') format('truetype'),
-    url('https://at.alicdn.com/t/font_1900305_g9slv4e12hk.svg#iconfont') format('svg');
-}</style>
-<!--整体CSS-->
-<style>body{background:#eff;}</style>
-<!--分体(上)-->
-<style>
-    .bg-top {
-        background-image: url(https://bing.ioliu.cn/v1/blur?w=1920,h=1080);
+    <head>
+        <title>aframework</title>
+        <link rel="stylesheet" href="https://unpkg.com/aframework/dist/aframework.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aframework/src/iconmain/font-face.css">
+        <style>
+            .last {
+    color: #eff;
+    font-size: 32px;
+    transition: all 0.5s;
+}
+            .last:hover {
+                color:coral;
+                transition: all 0.5s;
+                font-size: 35px;
+            }
+            .top_img {
+    background-image: url(https://bing.ioliu.cn/v1/blur?w=1920,h=1080);
     position: relative;
-    width: 102%;
+    width: 100%;
     background-color: #49b1f5;
     background-position: center center;
     -webkit-background-size: cover;
@@ -48,48 +35,180 @@
     background-attachment: fixed;
     top: -32px;
     left: -9px;
-    }
-    .last-p {
-    color:#eff;
-    font-size:32px;
-    }
-    .last-p:hover {
-        -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    -ms-transition: all 0.6s;
-    transition: all 0.6s;
-    -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  color:gold;
-    }
-</style>
-<title>More-Beautiful-Div-Framework</title>
-</head>
-<body>
-<div class="bg-top"><br><br><center><p class="last-p">More-Beautiful-Div-Framework</p><br><p class="last-p">给你的网站添加一些非常棒(๑•̀ㅂ•́)و✧的文字框吧!</p></center></div>
-<center><strong><h1>More-Beautiful-Div-Framework可以在您的网站内添加许许多多美妙的文字容器，你可以拿他做重点显示。</h1></strong></center>
-<center><p style="color:yellow;font-size:55px;">这里是引用方法:</p><p style="font-size:20px"><br>在您网站的head内放入&lt;link rel="stylesheet href="https://cdn.jsdelivr.net/gh/slblog-github/zeroausers@main/zero.css"&gt;<br>&lt;link rel="stylesheet" href="https://unpkg.com/more-beautiful-div-framework@1.0.9/more-beautiful-div-framework.min.css"&gt;<br>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"&gt;<br>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/More-Beautiful-Div-Framework/More-Beautiful-Div-Framework-CDN/yl-if.css"&gt;<br>接下来让我们来看看效果吧!<br></p></center></body>
-<footer>
-<div class="tip">标签1</div>
-<div class="tip success">标签2</div>
-<div class="tip warning">标签3</div>
-<div class="tip error">标签4</div>
-<div class="tip lite">标签5</div>
-<div class="tip ban">标签6</div>
-<div class="tip home">标签7</div>
-<div class="tip impo">标签8</div>
-<div class="tip ref">标签9</div>
-<div class="tip set">标签10</div>
-<div class="tip key">标签11</div>
-<div class="tip bell">标签12</div>
-<div class="tip qq">标签13</div><br><br><hr>
-<center><p>This CSS was originally created by SL, and its internal Error Tag, Warning Tag, Success Tag, and Default Tag are from the WordPress niRvana theme</p></center>
-<center><p>Contact/BUG feedback:<br>
-    <svg class="icon" aria-hidden="true"><use xlink:href="#icon-QQ"></use></svg>1.QQ:3356620252<br>
-    <svg class="icon" aria-hidden="true"><use xlink:href="#icon-email"></use></svg>2.Email: superflove@qq.com / sladmin@slwebtap.onmicrosoft.com</p></center>
-</footer>
+    margin: 10px;
+}
+             
+            body {
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+}
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
+}
+#box {
+    background: rgba(255, 255, 255, 0.644);
+    width: 95%;
+    height: 95%;
+}
+.an-button {
+    width: 60px;
+    height: 40px;
+    background: #92B901;
+    color: #ffffff;
+    position: relative;
+    font-weight: bold;
+    padding: 20px 10px 0px 10px;
+    animation: animated_div 5s 1 infinite;
+    -moz-animation: animated_div 5s 1 infinite;
+    -webkit-animation: animated_div 5s 1 infinite;
+    -o-animation: animated_div 5s 1 infinite;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-align: center;
+}
+@keyframes animated_div
+	{
+	0%		{transform: rotate(0deg);left:0px;}
+	25%		{transform: rotate(20deg);left:0px;}
+	50%		{transform: rotate(0deg);left:500px;}
+	55%		{transform: rotate(0deg);left:500px;}
+	70%		{transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100%	{transform: rotate(-360deg);left:0px;}
+	}
+
+@-webkit-keyframes animated_div
+	{
+	0%		{-webkit-transform: rotate(0deg);left:0px;}
+	25%		{-webkit-transform: rotate(20deg);left:0px;}
+	50%		{-webkit-transform: rotate(0deg);left:500px;}
+	55%		{-webkit-transform: rotate(0deg);left:500px;}
+	70%		{-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100%	{-webkit-transform: rotate(-360deg);left:0px;}
+	}
+
+@-moz-keyframes animated_div
+	{
+	0%   {-moz-transform: rotate(0deg);left:0px;}
+	25%  {-moz-transform: rotate(20deg);left:0px;}
+	50%  {-moz-transform: rotate(0deg);left:500px;}
+	55%  {-moz-transform: rotate(0deg);left:500px;}
+	70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100% {-moz-transform: rotate(-360deg);left:0px;}
+	}
+
+@-o-keyframes animated_div
+	{
+	0%   {transform: rotate(0deg);left:0px;}
+	25%  {transform: rotate(20deg);left:0px;}
+	50%  {transform: rotate(0deg);left:500px;}
+	55%  {transform: rotate(0deg);left:500px;}
+	70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+	100% {transform: rotate(-360deg);left:0px;}
+	}
+        </style>
+    </head>
+    <body>
+        <div class="top_img"><br><br><center><p class="last">aframework</p><br><p class="last">给你的网站添加一些非常棒(๑•̀ㅂ•́)و✧的文字框吧!</p></center></div>
+        <center><h1>使用aframework可以让你的网站多出一些文字框,下面是使用效果</h1></center>
+         <div id="box"><div class="tip">标签1</div>
+            <div class="tip success">标签2</div>
+            <div class="tip warning">标签3</div>
+            <div class="tip error">标签4</div>
+            <div class="tip lite">标签5</div>
+            <div class="tip ban">标签6</div>
+            <div class="tip imtran">标签8</div>
+            <div class="tip recover">标签9</div>
+            <div class="tip engine">标签10</div>
+            <div class="tip keyin">标签11</div>
+            <div class="tip bell">标签12</div>
+            <div class="tip qq">标签13</div></div>
+            <center><h1>或者你还可以给他们用fontawesome可以使用的动效库(qq标签不支持)</h1>
+            <h1>更多的效果可以自己去挖掘</h1>
+            <h2>引入: </h2>
+            <h3>在head插入&lt;link rel="stylesheet" href="https://unpkg.com/aframework/dist/aframework.min.css"&gt;&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css"&gt;&lt;link rel="stylesheet" href="https://unpkg.com/aframework/src/iconmain/font-face.css"&gt;</h3>
+        </center></body>
 </html>
